@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  photos = [
+    {
+      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      description: 'Gato 1'
+    },
+    {
+      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      description: 'Gato 1'
+    },
+    {
+      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      description: 'Gato 1'
+    }
+  ]
 }
 
 
