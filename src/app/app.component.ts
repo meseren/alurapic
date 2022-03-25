@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-}
+  title = 'Leão';
+  url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/280px-Lion_waiting_in_Namibia.jpg';
+  description = 'Angular';
+]}
