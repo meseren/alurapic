@@ -1,26 +1,22 @@
-import { Component } from '@angular/core';
+import { PhotoService } from './photos/photo/photo.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  photos = [
-    {
-      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
-      description: 'Gato 1'
-    },
-    {
-      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
-      description: 'Gato 1'
-    },
-    {
-      url: 'https://www.petz.com.br/blog/wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
-      description: 'Gato 1'
-    }
-  ]
+  photos: any[] = [];
+
+  constructor(private photoService: PhotoService) { }
+
+  ngOnInit(): void {
+    this.photoService
+    .listFromUser('flavio')
+    .subscribe(photos => this.photos = photos);
+  }
 }
 
 
