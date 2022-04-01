@@ -10,7 +10,6 @@ const API = 'http://localhost:3000';
 })
 export class PhotoService {
 
-
   constructor(private http: HttpClient) { }
 
   listFromUser(userName: string) {
